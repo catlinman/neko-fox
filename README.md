@@ -21,6 +21,10 @@ directory to it. To find the root directory, head to the Firefox menu `Help >
 Troubleshooting Information` and click on the *open folder* button beside the
 profile information.
 
+## Notes ##
+
+The preview image/video uses [BWNT](https://addons.mozilla.org/en-US/firefox/addon/bwnt/) as the new tab page and this repositories corresponding browser theme [Neko Fox](https://addons.mozilla.org/en-US/firefox/addon/nekofox/).
+
 ## Attribution ##
 
 This theme is based in large portions on work by
