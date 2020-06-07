@@ -29,6 +29,7 @@
 :root:not([customizing]) :hover > #nav-bar #urlbar,
 :root:not([customizing]) #navigator-toolbox:focus-within #nav-bar #urlbar {
 	font-size: 1.2em !important;
+    margin-left: -12px;
 }
 
 /* Remove borders & shadows */
@@ -54,6 +55,8 @@
 
 /* Make urlbar semi-opaque when unfocused or unhovered */
 #urlbar {
+    padding-left: 8px;
+    padding-right: 8px;
     margin-left: -12px;
     opacity: 0.5;
     background-color: var(--dimmed-background);
@@ -61,7 +64,7 @@
 }
 
 #urlbar[breakout] {
-    width: 99.5vw !important;
+    width: 100vw !important;
 }
 
 #urlbar[breakout]:hover, #urlbar[breakout][focused] {
@@ -78,8 +81,5 @@
 
 #urlbar:hover, #urlbar[focused] {
     opacity: 1;
-    margin-left: 0px;
     width: 100%;
 }
-
-

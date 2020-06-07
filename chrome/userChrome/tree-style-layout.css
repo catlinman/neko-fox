@@ -47,7 +47,6 @@
     -moz-box-flex: 1;
     background-color: var(--toolbar-bgcolor,--toolbar-non-lwt-bgcolor);
     background-clip: padding-box;
-    border-right: 30px solid transparent;
     border-image: linear-gradient(
             to left,
             transparent,
@@ -67,11 +66,16 @@
 }
 
 #urlbar[breakout] {
-    width: 100% !important;
+    width: calc(100vw - var(--window-control-width) - var(--tst-min-width)) !important;
 }
 
 #urlbar[breakout]:hover, #urlbar[breakout][focused] {
     width: 100% !important;
+}
+
+#urlbar {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
 }
 
 /* Position private browsing indicator */

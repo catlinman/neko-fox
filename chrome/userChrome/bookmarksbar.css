@@ -17,8 +17,7 @@
     z-index: 1;
 }
 
-#navigator-toolbox:hover #PersonalToolbar,
-#navigator-toolbox:focus-within #PersonalToolbar {
+#navigator-toolbox:hover #PersonalToolbar {
     transform: rotateX(0);
 }
 
