@@ -1,0 +1,51 @@
+
+/* Prevent white flash on page load */
+browser[type="content-primary"], tabbrowser tabpanels, #appcontent > #content {
+	background-color: var(--primary-background) !important;
+}
+
+/* Color search suggestions */
+panel[type="autocomplete"], panel[type="autocomplete-richlistbox"], .autocomplete-history-popup {
+    background: var(--secondary-background) !important;
+    border: var(--accent) !important;
+}
+
+.search-panel-header, .autocomplete-tree {
+	color: var(--text) !important;
+}
+
+/* Remove urlbar & searchbar border */
+#urlbar, .searchbar-textbox {
+    border: none !important;
+}
+
+/* Style dialog popups */
+@-moz-document url("chrome://global/content/commonDialog.xul") {
+	#commonDialog {
+		background-color: var(--primary-background) !important;
+		color: var(--text) !important;
+    }
+}
+
+/* Color scrollbar */
+#bookmarksPanel, #history-panel {
+	scrollbar-color: var(--primary-background) var(--primary-background-hover) !important;
+}
+
+/* Remove notification border */
+notification {
+    border: none !important;
+}
+
+/* Hide "Did you mean to go to *" notifications */
+notification[value="keyword-uri-fixup"] {
+    display: none;
+}
+
+/* Color main background */
+body {
+    background-color: var(--primary-background);
+}
+#navigator-toolbox {
+    --toolbar-bgcolor: var(--primary-background);
+}

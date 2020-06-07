@@ -1,0 +1,54 @@
+
+:root:not([customizing]) :hover > #navigator-toolbox + #tabbrowser-tabs,
+:root:not([customizing]) :hover > #nav-bar + #tabbrowser-tabs,
+:root:not([customizing]) :hover > #tabbrowser-tabs {
+	--tab-line-color: var(--color) !important;
+}
+
+#tabbrowser-tabs {
+	--tab-line-color: var(--color) !important;
+}
+
+#tabbrowser-tabs:-moz-window-inactive {
+	--tab-line-color: rgb(128, 128, 128) !important;
+}
+
+.tab-background {
+	background: none;
+}
+
+/* Active tab color */
+.tab-background[selected="true"] {
+    background-attachment: none !important;
+    background-color: var(--secondary-background) !important;
+    background-image: none !important;
+}
+
+/* Only show close buttons on background tabs when hovering with the mouse (Credit to Timvde) */
+.tabbrowser-tab:not([selected]):not([pinned]) .tab-close-button {
+    display: none !important;
+}
+.tabbrowser-tab:not([selected]):not([pinned]):hover .tab-close-button {
+    display: -moz-box !important;
+}
+
+/* some experimentation with expanding tab on hover to see the title better, it's kinda stupid but I was just messing around, could be something useful in the future */
+.tabbrowser-tab:not([selected]):hover { 
+   min-width: 300px !important;
+   transition: min-width 150ms var(--animation-easing-function) 2s !important;
+}
+
+/* Underline & dim unloaded tabs */
+.tabbrowser-tab[pending] {
+    font-style: italic;
+}
+
+toolbarspring {
+    min-width: 8px;
+    max-width: 8px;
+}
+
+/* Change tab max width */
+.tabbrowser-tab[fadein]:not([pinned]) {
+    max-width: 300px !important;
+}

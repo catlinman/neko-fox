@@ -1,0 +1,82 @@
+/* Make the empty top edge of the browser draggable */
+#navigator-toolbox {
+    -moz-window-dragging: drag;
+}
+
+/* Position tabs bar */
+#TabsToolbar {
+    -moz-box-ordinal-group: 1 !important;
+    visibility: collapse !important;
+}
+
+/* Position navbar and make room for tts sidebar */
+#nav-bar {
+    -moz-box-ordinal-group: 2 !important;
+    border: none !important;
+    padding-left: var(--tst-min-width) !important;
+    margin-right: var(--window-control-width) !important;
+}
+
+:root:not([inFullscreen]) #nav-bar {
+    margin-top: calc(var(--title-bar-height) * -1 + var(--top-drag-space));
+}
+
+/* Position bookmark bar */
+#PersonalToolbar {
+    -moz-box-ordinal-group: 3 !important;
+    padding-left: calc(var(--tst-min-width) + 10px) !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    -moz-window-dragging: drag;
+}
+
+/* Hide second set of window controls */
+#TabsToolbar .titlebar-buttonbox-container {
+    visibility: collapse !important;
+}
+
+/* Style menubar */
+#toolbar-menubar {
+    min-height: unset !important;
+    height: var(--title-bar-height) !important;
+    position: relative;
+    margin-left: var(--tst-min-width) !important;
+}
+
+#main-menubar {
+    -moz-box-flex: 1;
+    background-color: var(--toolbar-bgcolor,--toolbar-non-lwt-bgcolor);
+    background-clip: padding-box;
+    border-right: 30px solid transparent;
+    border-image: linear-gradient(
+            to left,
+            transparent,
+            var(--toolbar-bgcolor,--toolbar-non-lwt-bgcolor) 30px
+        )
+        20 / 30px;
+}
+
+#toolbar-menubar:not([inactive]) {
+    z-index: 999;
+}
+
+#toolbar-menubar[inactive] > #menubar-items {
+    opacity: 0;
+    pointer-events: none;
+    margin-left: var(--uc-window-drag-space-width, 0px);
+}
+
+#urlbar[breakout] {
+    width: 100% !important;
+}
+
+#urlbar[breakout]:hover, #urlbar[breakout][focused] {
+    width: 100% !important;
+}
+
+/* Position private browsing indicator */
+.private-browsing-indicator {
+    margin-bottom: -230px !important;
+    margin-right: -60px !important;
+}
+

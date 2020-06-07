@@ -1,0 +1,13 @@
+
+:root {
+  --tabs-border: transparent !important;
+}
+
+/* Lightweight Theme Support */
+:root:-moz-lwtheme #nav-bar,
+:root:-moz-lwtheme #PersonalToolbar {
+  background-color: var(--lwt-accent-color) !important;
+  background-image: var(--lwt-header-image), var(--lwt-additional-images) !important;
+  background-position: var(--lwt-background-alignment) !important;
+  background-repeat: var(--lwt-background-tiling) !important;
+}

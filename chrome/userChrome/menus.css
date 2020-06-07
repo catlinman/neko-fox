@@ -1,0 +1,37 @@
+
+/* Menu font color */
+menuitem:not([disabled=true]), menu {
+    color: var(--text-disabled) !important
+}
+
+menuitem[disabled=true] {
+    color: var(--text) !important;
+}
+
+/* Menu background color */
+popup-internal-box, panelview, panelmultiview, .panel-arrowcontent {
+    background-color: var(--secondary-background) !important;
+}
+
+/* Hide seperators */
+menuseparator {
+    display: none !important;
+}
+
+/* Menu items color */
+menu, menuitem {
+    background-color: var(--primary-background) !important;
+}
+
+menu:hover, menuitem:hover {
+    background-color: var(--primary-background-hover) !important;
+}
+
+/* Color panael footers & remove border */
+.panel-subview-footer, .panel-footer > button {
+    background-color: var(--accent) !important;
+    border-style: none !important;
+}
+.panel-subview-footer:hover, .panel-footer > button:hover {
+    background-color: var(--accent-hover) !important;
+}

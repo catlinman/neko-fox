@@ -1,0 +1,23 @@
+/* Style top border & color background */
+.browserContainer > findbar {
+    border-top: var(--border-width) solid yellow !important;
+    background: yellow !important;
+}
+
+/* Style buttons */
+.findbar-find-previous, .findbar-find-next {
+    border: none !important;
+    background: none !important;
+    border-radius: var(--border-width) !important;
+    fill: #FFF !important;
+}
+
+/* Fix spacing */
+.findbar-find-previous {
+    margin-left: 6px !important;
+}
+
+/* Style buttons on hover */
+.findbar-find-previous:hover, .findbar-find-next:hover {
+	background: var(--toolbarbutton-hover-background) !important;
+}

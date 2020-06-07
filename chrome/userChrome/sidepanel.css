@@ -1,0 +1,44 @@
+/* Color stuff & remove borders */
+#bookmarks-view, #historyTree, #history-panel, #sidebar-header, #sidebar {
+    background-color: var(--primary-background) !important;
+    color: var(--text) !important;
+    border: none !important;
+}
+
+#bookmarks-view {
+    background-color: var(--primary-background) !important;
+    border: none !important;
+}
+
+#viewButton {
+    color: var(--text) !important;
+}
+
+#sidebar-box {
+    background-color: var(--secondary-background) !important;
+}
+
+/* Style splitter */
+#sidebar-splitter {
+    width: var(--border-width) !important;
+    color: var(--accent);
+}
+
+/* Darken and resize sidebar searchbox */
+#sidebar-search-container textbox {
+    -moz-appearance: none !important;
+    background-color: var(--secondary-background) !important;
+    color: var(--text) !important;
+    border: none !important;
+    height: 30px !important;
+}
+
+/* Hide sidebar box border */
+#sidebar-search-container {
+    background-color: var(--primary-background) !important;
+}
+
+/* Change folder icon color */
+.bookmark-item[container], treechildren::-moz-tree-image(container) {
+    fill: var(--text) !important;
+}

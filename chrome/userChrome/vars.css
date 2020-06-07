@@ -1,0 +1,26 @@
+:root {
+    /* Colors */
+    --primary-background: #0c0c0c;
+    --primary-background-hover: #101010;
+    --secondary-background: #101010;
+    --tertiary-background: #303030;
+    --dimmed-background: #000000;
+    --text: #aaa;
+    --text-disabled: #333333;
+    --accent: #070707;
+    --accent-hover: #3f3f3f;
+    --color: #ffc800;
+
+    /* TST */
+    --tst-margin-top-offset: 25px;
+    --tst-min-width: 40px;
+    --tst-max-width: 200px;
+
+    /* Misc. */
+    --window-control-width: 150px;
+    --top-drag-space: 5px;
+    --animation-time: 0.3s;
+    --border-width: 2px;
+    --bookmarks-bar-height: 25px;
+    --title-bar-height: 38px;
+}
