@@ -5,7 +5,6 @@
 :root:not([customizing]) #nav-bar-customization-target > toolbarbutton:not(.toolbarbutton-combined),
 :root:not([customizing]) #nav-bar-customization-target > toolbaritem:not(#urlbar-container):not(.toolbaritem-combined-buttons) {
     transform: scaleX(0) !important;
-    margin-left: -28px !important;
     pointer-events: none !important;
     opacity: 0.5;
     transition: 
@@ -26,10 +25,29 @@
     opacity: 1;
 }
 
+:root:not([customizing]) #nav-bar toolbarbutton,
+:root:not([customizing]) #nav-bar .toolbarbutton-icon {
+    transition: 
+        width var(--animation-time) var(--animation-easing-function), 
+        height var(--animation-time) var(--animation-easing-function), 
+        padding var(--animation-time) var(--animation-easing-function)
+        !important;
+}
+
+:root:not([customizing]) #nav-bar:not(:hover) toolbarbutton,
+:root:not([customizing]) #nav-bar:not(:hover) toolbarbutton stack,
+:root:not([customizing]) #nav-bar:not(:hover) toolbaritem,
+:root:not([customizing]) #nav-bar:not(:hover) .toolbarbutton-icon {
+    width: 0px !important;
+    height: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    border: 0px !important;
+}
+
 :root:not([customizing]) :hover > #nav-bar #urlbar,
 :root:not([customizing]) #navigator-toolbox:focus-within #nav-bar #urlbar {
 	font-size: 1.2em !important;
-    margin-left: -12px;
 }
 
 /* Remove borders & shadows */
@@ -53,26 +71,30 @@
     box-shadow: none;
 }
 
+#urlbar-container {
+    margin: 0px !important;
+    padding-bottom: 8px !important;
+}
+
+#urlbar-background, #urlbar-input-container {
+    margin-left: 2px;
+    margin-right: 2px;
+    background: none;
+}
+
+#urlbar-input-container #page-action-buttons {
+    margin-right: 12px;
+}
+
 /* Make urlbar semi-opaque when unfocused or unhovered */
 #urlbar {
-    padding-left: 8px;
-    padding-right: 8px;
-    margin-left: -12px;
     opacity: 0.5;
     background-color: var(--dimmed-background);
     transition: opacity var(--animation-time);
 }
 
-#urlbar[breakout] {
-    width: 100vw !important;
-}
-
-#urlbar[breakout]:hover, #urlbar[breakout][focused] {
-    width: 100% !important;
-}
-
 #urlbar[breakout]:active {
-    border: solid 1px var(--color);    
+    border: solid 1px var(--color);
 }
 
 #urlbar[focused] {
@@ -81,5 +103,4 @@
 
 #urlbar:hover, #urlbar[focused] {
     opacity: 1;
-    width: 100%;
 }

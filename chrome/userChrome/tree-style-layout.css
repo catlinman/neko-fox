@@ -13,12 +13,17 @@
 #nav-bar {
     -moz-box-ordinal-group: 2 !important;
     border: none !important;
+    margin-top: -35px !important;
     padding-left: var(--tst-min-width) !important;
     margin-right: var(--window-control-width) !important;
 }
 
 :root:not([inFullscreen]) #nav-bar {
     margin-top: calc(var(--title-bar-height) * -1 + var(--top-drag-space));
+}
+
+#nav-bar-customization-target {
+    min-height: 30px;
 }
 
 /* Position bookmark bar */
@@ -74,8 +79,14 @@
 }
 
 #urlbar {
+    display: inherit !important;
     padding-left: 0px !important;
     padding-right: 0px !important;
+    margin-top: -2px !important;
+}
+
+#urlbar-container {
+    padding-bottom: 0px !important;
 }
 
 /* Position private browsing indicator */

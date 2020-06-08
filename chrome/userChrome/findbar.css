@@ -1,7 +1,7 @@
 /* Style top border & color background */
 .browserContainer > findbar {
-    border-top: var(--border-width) solid yellow !important;
-    background: yellow !important;
+    border-top: var(--border-width) solid var(--secondary-background) !important;
+    background: var(--primary-background) !important;
 }
 
 /* Style buttons */
