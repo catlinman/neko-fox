@@ -23,11 +23,13 @@ profile information.
 
 ## Notes ##
 
-The preview image/video uses [BWNT](https://addons.mozilla.org/en-US/firefox/addon/bwnt/) as the new tab page and this repositories corresponding browser theme [Neko Fox](https://addons.mozilla.org/en-US/firefox/addon/nekofox/).
+The preview image/video uses [BWNT](https://addons.mozilla.org/en-US/firefox/addon/bwnt/)
+as the new tab page and this repositories corresponding browser theme
+[Neko Fox](https://addons.mozilla.org/en-US/firefox/addon/nekofox/).
 
 ## Attribution ##
 
 This theme is based in large portions on work by
 [moamenk](https://github.com/moamenk/) and his
-[https://github.com/moamenk/Firefox-Minimal-Responsive-Theme/](Firefox Minimal Responsive Theme).
+[Firefox Minimal Responsive Theme](https://github.com/moamenk/Firefox-Minimal-Responsive-Theme/).
 
