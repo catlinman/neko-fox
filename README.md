@@ -29,6 +29,5 @@ The preview image/video uses [BWNT](https://addons.mozilla.org/en-US/firefox/add
 
 This theme is based in large portions on work by
 [moamenk](https://github.com/moamenk/) and his
-[https://github.com/moamenk/Firefox-Minimal-Responsive-Theme/](Firefox Minimal
-Responsive Theme).
+[https://github.com/moamenk/Firefox-Minimal-Responsive-Theme/](Firefox Minimal Responsive Theme).
 
